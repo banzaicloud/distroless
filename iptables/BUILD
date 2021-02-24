@@ -9,7 +9,7 @@ load("//:checksums.bzl", "ARCHITECTURES")
     container_image(
         name = "iptables" + "_" + arch,
         architecture = arch,
-        base = "//base:base" + "_" + "nonroot" + "_" + arch + "_debian9",
+        base = "//base:base" + "_" + "nonroot" + "_" + arch + "_debian10",
         debs = [
             DISTRO_PACKAGES[arch]["_debian9"]["iptables"],
             DISTRO_PACKAGES[arch]["_debian9"]["libiptc0"],
